@@ -1,0 +1,31 @@
+[core]
+	excludesfile = /home/josh/.gitignore
+	fsyncobjectfiles = true
+	compression = 9
+[user]
+	name = Josh Lee
+	email = jleedev@gmail.com
+	signingkey = "AFF87338"
+[alias]
+	stat = status
+	ci = commit
+	co = checkout
+	w = whatchanged
+	tnylog = log --pretty=oneline --abbrev-commit
+[color]
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[instaweb]
+	httpd = webrick

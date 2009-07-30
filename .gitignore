@@ -1,0 +1,16 @@
+*.pyc
+*.o
+*.lo
+*.la
+.*.rej
+*.rej
+.*~
+*~
+.#*
+.DS_Store
+.*.swp
+*.hi
+*.log
+*.aux
+a.out
+#*#
