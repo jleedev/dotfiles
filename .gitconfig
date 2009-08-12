@@ -12,6 +12,8 @@
 	co = checkout
 	w = whatchanged
 	tnylog = log --pretty=oneline --abbrev-commit
+[push]
+	default = matching
 [color]
 	ui = true
 [color "branch"]
