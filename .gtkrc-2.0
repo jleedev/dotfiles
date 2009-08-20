@@ -4,3 +4,4 @@ gtk-menu-popup-delay = 0
 gtk-cursor-blink = 0
 gtk-show-unicode-menu = 0
 gtk-show-input-method-menu = 0
+gtk-key-theme-name = "Emacs"
