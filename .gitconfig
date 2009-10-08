@@ -31,3 +31,9 @@
 	untracked = cyan
 [instaweb]
 	httpd = webrick
+[github]
+	user = jleedev
+[web]
+	browser = xdg-open
+[browser "xdg-open"]
+	cmd = /usr/bin/xdg-open
