@@ -1,0 +1,23 @@
+#!/bin/bash
+
+die() { echo >&2 "$(basename "$0"): $@"; exit 1; }
+
+Ping=/System/Library/Sounds/Ping.aiff
+if [ -e $Ping ]; then
+    mybeep() { afplay $Ping; }
+elif type play; then
+    mybeep() { play -q -n -c1 synth sin 440 fade p 0.05 0.1 0.05; }
+elif type beep; then
+    mybeep() { beep; }
+else
+    mybeep() { printf '\007'; }
+fi
+
+
+trap "" INT
+printf "\033]0;ping $@\007"
+exec ping "$@" | (
+  tee /dev/stderr | \
+  grep --line-buffered 'bytes from' 2>&1 | \
+  while read line; do mybeep; done
+) 2>&1
