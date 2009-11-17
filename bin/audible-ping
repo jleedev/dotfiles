@@ -1,7 +1,5 @@
 #!/bin/bash
 
-die() { echo >&2 "$(basename "$0"): $@"; exit 1; }
-
 Ping=/System/Library/Sounds/Ping.aiff
 if [ -e $Ping ]; then
     mybeep() { afplay $Ping; }
