@@ -1,3 +1,6 @@
+-- TODO update me for 0.9 release, basically getting rid of the handful of
+-- functions I copy/pasted.
+
 import XMonad
 import XMonad.Actions.CycleWS
 import XMonad.Actions.UpdatePointer
