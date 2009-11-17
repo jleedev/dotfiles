@@ -2,7 +2,6 @@
 PATH=/usr/sbin:/sbin:"$PATH"
 while :
 do
-    gateway=`/sbin/route -n get 0 |awk '/gateway/{print $2}'`
     gateway=`netstat -rn |egrep '0.0.0.0|default' |awk '{print $2}' |grep -v 0.0.0.0 |head -n1`
     echo "Beginning EKG of $gateway"
     audible-ping $gateway
