@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /home/josh/.gitignore
+	excludesfile = /Users/josh/.gitignore
 	fsyncobjectfiles = true
 	compression = 9
 [user]
@@ -11,7 +11,8 @@
 	ci = commit
 	co = checkout
 	w = whatchanged
-	tnylog = log --pretty=oneline --abbrev-commit
+	tnylog = log --pretty=oneline --abbrev-commit --graph
+	dc = diff --cached
 [push]
 	default = matching
 [color]
@@ -29,11 +30,5 @@
 	added = yellow
 	changed = green
 	untracked = cyan
-[instaweb]
-	httpd = webrick
 [github]
 	user = jleedev
-[web]
-	browser = xdg-open
-[browser "xdg-open"]
-	cmd = /usr/bin/xdg-open
