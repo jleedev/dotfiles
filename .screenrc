@@ -1,0 +1,11 @@
+autodetach on
+defflow off
+defutf8 on
+#escape "^Zz"
+hardstatus alwayslastline "%{= ky}%?%-Lw%?%{= yk}%n*%f %t%?(%u)%?%{= ky}%?%+Lw%?%{= ky} %=%H %l | %Y-%m-%d %c"
+nethack on
+startup_message off
+unsetenv DISPLAY
+vbell off
+term xterm-color
+termcapinfo xterm-color|rxvt ti@:te@
