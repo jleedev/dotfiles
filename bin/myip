@@ -1,0 +1,5 @@
+#!/bin/sh
+#GET http://www.whatismyip.com/ |grep h1 |sed s/h1//g |tr -d "a-zA-Z</> "
+curl -s http://checkip.dyndns.org/ |tr -d '[A-Za-z]</> :'
+#GET http://www.fuse.net/cgi-bin/ztip.cgi |grep Internet |tr -d "a-zA-Z</> " |sed s/.$//
+#GET http://www.whatismyip.org/; echo
