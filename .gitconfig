@@ -11,7 +11,7 @@
 	ci = commit
 	co = checkout
 	w = whatchanged
-	tnylog = log --pretty=oneline --abbrev-commit --graph
+	tnylog = log --oneline --graph --decorate
 	dc = diff --cached
 [push]
 	default = matching
@@ -32,3 +32,5 @@
 	untracked = cyan
 [github]
 	user = jleedev
+[web]
+	browser = open
