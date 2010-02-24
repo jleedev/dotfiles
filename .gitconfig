@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/josh/.gitignore
+	excludesfile = ~/.gitignore
 	fsyncobjectfiles = true
 	compression = 9
 [user]
