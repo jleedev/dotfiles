@@ -40,3 +40,8 @@
 	user = jleedev
 [web]
 	browser = open
+[diff]
+	mnemonicprefix = true
+	renames = true
+[instaweb]
+	httpd = webrick
