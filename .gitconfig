@@ -14,6 +14,11 @@
 	tnylog = log --oneline --graph --decorate
 	dc = diff --cached
 	tags = log -n1 --pretty=format:%h%d
+	serve = daemon --reuseaddr --base-path=. --export-all --verbose
+	wd = diff --word-diff
+	wl = log --word-diff -p
+	ws = show --word-diff
+	wdc = diff --word-diff --cached
 [push]
 	default = matching
 [color]
